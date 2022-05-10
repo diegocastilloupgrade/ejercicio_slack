@@ -1,0 +1,16 @@
+header {
+  background-color: $primaryPurple;
+  @include flexCenter(row, space-between, center);
+  nav {
+    @include flexCenter(row, center, center);
+  }
+  ul {
+      @include flexCenter(row, space-between, center);
+      list-style: none;
+    li {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
