@@ -1,11 +1,15 @@
 .btn{
     padding: 1rem;
+    border:solid 1px $white;
     &-primary{
         color: $white;
-
-
     }
     &-secondary{
+        a{
+            color: $primaryPurple;
+            background: white;
+
+        }
 
     }
 }

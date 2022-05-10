@@ -64,4 +64,12 @@ header ul {
 header ul li a {
   color: #fff;
 }
+
+.btn {
+  padding: 1rem;
+}
+
+.btn-primary {
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
