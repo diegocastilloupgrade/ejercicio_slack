@@ -1,0 +1,14 @@
+.firstBlock,
+.secondBlock {
+  boder: solid 4px rgba(255, 255, 255, 0.2);
+  background: $white;
+}
+.firstBlock {
+  .blockHeader {
+      background: $headerBackground;
+  }
+  .blockContainer{
+      @include flexCenter (row,center,center)
+  }
+}
+

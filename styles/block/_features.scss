@@ -1,0 +1,50 @@
+.features {
+  @include flexCenter(column, flex-start, center);
+  margin-top: -10rem;
+  margin-bottom: 5rem;
+  .featurescontainer {
+    width: 80%;
+    @include tablet {
+      width: 90%;
+      @include tablet{
+        @include flexCenter(column,center,center);
+      }
+    }
+    h2 {
+      color: $white;
+      margin: 2rem 0;
+    }
+    .featurescontainerblocks {
+      @include flexCenter(row, space-between, flex-start);
+      @include tablet {
+        @include flexCenter(column, center, flex-start);
+      }
+      .featureblock {
+        background: $white;
+        padding: 1rem;
+        box-shadow: #0003 0px 0px 32px 0px;
+        max-width: 260px;
+        margin-bottom: 1rem;
+        img {
+          margin-bottom: 0.5rem;
+        }
+        p {
+          color: $softgray;
+          font-size: 14px;
+          margin-bottom: 0.5rem;
+        }
+        h3 {
+          font-size: 24px;
+          margin-bottom: 1rem;
+        }
+        a {
+          color: $darkblue;
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+          @include flexCenter(row,space-between, center);
+        }
+      }
+    }
+  }
+}

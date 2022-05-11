@@ -1,16 +1,29 @@
 header {
   background-color: $primaryPurple;
+  padding: 2rem;
+  .hamburger {
+    display: none;
+    color:white;
+    font-size: 2rem;
+  }
   @include flexCenter(row, space-between, center);
   nav {
-    @include flexCenter(row, center, center);
+    @include flexCenter(row, space-between, center);
   }
   ul {
-      @include flexCenter(row, space-between, center);
-      list-style: none;
+    @include flexCenter(row, space-between, center);
+    list-style: none;
     li {
       a {
         color: $white;
+        font-weight: bold;
       }
     }
+  }
+  @include tablet {
+    nav ul, nav a{
+      display: none;
+    }
+    .hamburger{ display: block;}
   }
 }

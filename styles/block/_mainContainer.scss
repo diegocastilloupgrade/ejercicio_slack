@@ -1,0 +1,95 @@
+.main {
+  background: $primaryPurple;
+  padding-bottom: 10rem;
+  @include flexCenter(column, flex-start, center);
+  h1 {
+    color: $white;
+    margin: 2rem 0;
+  }
+  .mainContainer {
+    width: 60%;
+    @include tablet {
+      width: 90%;
+    }
+  }
+  .infoBlock {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-radius: 9px;
+    margin-bottom: 2rem;
+    background: $white;
+  }
+  .firstBlock {
+    .blockHeader {
+      padding: 1rem;
+    }
+    .blockContainer {
+      @include flexCenter(row, space-between, center);
+      padding: 1rem;
+      .leftBlock {
+        @include flexCenter(row, space-between, center);
+        .recurso {
+          margin-right: 1rem;
+        }
+        .miniaturatitulo {
+          font-weight: bold;
+        }
+        .miniaturas {
+          @include flexCenter(row, flex-start, center);
+        }
+        .miniAvatar {
+          margin-right: -4px;
+          width: 20px;
+          height: 20px;
+          border: 1px solid $white;
+          border-radius: 4px;
+        }
+        .z1 {
+          z-index: 5;
+        }
+        .z2 {
+          z-index: 4;
+        }
+        .z3 {
+          z-index: 3;
+        }
+        .z4 {
+          z-index: 2;
+        }
+        .z5 {
+          z-index: 1;
+        }
+        .membernumber {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  .secondBlock {
+    position: relative;
+    min-height: 89px;
+    @include flexCenter(row, center, center);
+    img {
+      position: absolute;
+      bottom: -32px;
+      left: 0;
+    }
+    p {
+      margin-left: 230px;
+    }
+    @include tablet {
+      @include flexCenter(column, flex-start, flex-start);
+      height: 200px;
+      p {
+        margin: 1rem 1rem;
+      }
+      a {
+        width: 80%;
+      }
+    }
+  }
+  .spacehelp{
+      color: $white;
+      margin: 2rem auto;
+      a{color: $primaryBlue;}
+  }
+}

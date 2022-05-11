@@ -1,0 +1,60 @@
+footer {
+  @include flexCenter(column, center, center);
+  .footercontainer {
+    width: 90%;
+  }
+  .footerfaq {
+    @include flexCenter(row, space-between, flex-start);
+    gap: 30px;
+    margin-bottom: 3rem;
+    @include tablet {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+  }
+  dt {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+  dd {
+    margin-bottom: 1rem;
+    font-size: 0.8em;
+    color: $softgray;
+  }
+  .footerlegal {
+    padding: 3rem;
+    @include tablet{padding: 3rem 1rem;
+    }
+    .legallist {
+      @include flexCenter(row, space-between, flex-start);
+      margin-bottom: 3rem;
+      @include flexCenter(column, space-between, flex-start);
+    }
+    ul {
+      list-style: none;
+      @include flexCenter(row, space-between, flex-start);
+      gap: 2rem;
+      @include tablet{
+          gap: 1rem;
+      }
+      &.legallistelements {
+        a {
+          font-weight: bold;
+        }
+      }
+      &.rrsselements {
+        a {
+          color: black;
+        }
+        .slackdownload a {
+          color: $darkblue;
+        }
+      }
+    }
+    p {
+      color: $softgray;
+    }
+  }
+}
